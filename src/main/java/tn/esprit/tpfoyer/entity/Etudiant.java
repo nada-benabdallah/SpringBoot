@@ -24,7 +24,7 @@ public class Etudiant {
     private String ecole;
     private Date dateNaissance;
 
-    @OneToMany(mappedBy = "etudiant")
+    @ManyToMany
     private List<Reservation> reservations;
 
 }
